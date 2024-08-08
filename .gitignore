@@ -1,0 +1,11 @@
+# Sensitive information
+*.env
+!example.env
+
+# Python
+__pycache__/
+.idea/
+.venv/
+
+# Log
+*.log

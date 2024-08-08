@@ -1,0 +1,65 @@
+# Python Console Script Template
+
+Welcome to the template for creating console scripts in Python! This template includes all the necessary components for working with databases, deploying with Docker, and logging.
+
+## Technology Stack
+
+### Database
+- **SQLAlchemy** - ORM for database interaction.
+- **PostgreSQL** - Relational database.
+
+### Deployment
+- **Docker** - Platform for containerizing applications.
+
+### Logging
+- **Loguru** - Simple and powerful logging library.
+
+### Configuration (Optional)
+- **Python-dotenv** - Library for managing configuration through `.env` files. (Used if Docker is not in use).
+
+## Installation and Setup
+
+### Requirements
+- Python 3.11 or newer
+- PostgreSQL
+- Docker (optional, if using Docker)
+
+### Install Dependencies
+
+1. Clone the repository:
+
+    ```bash
+    git clone https://github.com/vinalian/ConsoleProgramTemplate.git
+    cd ConsoleProgramTemplate
+    ```
+
+2. Configure `local.env`:
+   1. Create a `local.env` file.
+   2. Populate the file according to the example provided in `example.env`.
+
+3. Install dependencies using pip:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+### Database Setup
+
+1. Ensure PostgreSQL is installed and running.
+2. Create a database and configure the connection parameters in your script or `.env` file (if using Python-dotenv).
+
+### Using Docker
+
+1. Build the Docker image and run the containers:
+
+    ```bash
+    docker-compose -f ./docker-compose.yaml up --build -d
+    ```
+
+### Logging
+
+Logs for your application will be handled using Loguru. You can configure them in the configuration files or within your script.
+
+### Usage Examples
+
+1. Create a scraper service.
